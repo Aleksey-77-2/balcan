@@ -251,7 +251,7 @@ header {
 .product-wrapper{
 	padding-bottom: 180px;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 300px);
+	grid-template-columns: repeat(auto-fill, 270px);
 	gap: 40px 40px;
 	justify-content: center;
 
