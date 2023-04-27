@@ -1,0 +1,38 @@
+.header_salad{
+	background-color: #000;
+}
+.nav-ittem_menu{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	transition: color 0.3s linear;
+}
+.nav-ittem_menu:hover {
+	color: #d81d1d;
+}
+main{
+	background-image: url(img/1626430623_10-almode_ru-p-temnaya-stena-13.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.menu-title_salad{
+	color: #ffff;
+	text-align: center;
+	padding-top: 100px;
+	margin-bottom: 100px;
+	font-family: 'Tinos', serif;
+	font-weight: 400;
+	font-size: 54px;
+}
+.card:hover{
+	background-color:#fff;
+	transform: none;
+}
+.card-text_salad{
+	font-weight: 400;
+	font-size: 20px;
+}
+.card-text_salad a{
+	text-decoration: none;
+	color: #000;
+}
