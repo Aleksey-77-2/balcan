@@ -1,0 +1,180 @@
+/* Мобильнкая панель */
+
+@media (max-width: 1200px) {
+  html {
+    font-size:15px;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size:14px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size:12px;
+  } 
+}
+
+@media(max-width: 1300px) {
+
+	.header-titl {
+		position: static;
+	}
+
+	.header-suptitle:before,
+	.header-suptitle:after {
+
+		content: none;
+
+	}
+
+}
+@media(max-width: 1400px) {
+
+	.history-content {
+		justify-content: center;
+		padding-bottom: 180px;
+		justify-content: center;
+		display: grid;
+		gap: 75px;
+		grid-template-columns: repeat(1, 260px);
+		grid-template-rows: repeat(3, 290px);
+		grid-auto-rows: 380px;
+		grid-template-areas:
+			"historys1"
+			"historys2"
+		;
+
+	}
+
+}
+
+/* @media(max-width: 768px) {
+	.menu-title {
+		padding-top: 62px;
+		margin-bottom: 92px;
+	}
+
+	.product-wrapper {
+		padding-bottom: 120px;
+	}
+
+	.galery-title {
+		padding-top: 60px;
+	}
+
+	.map-title {
+		padding-top: 55px;
+		padding-bottom: 0px;
+	}
+
+} */
+
+@media(max-width: 1200px) {
+	.history-holder {
+		display: block;
+	}
+
+	.map_block {
+		display: none;
+	}
+
+	.map_main {
+		display: none;
+	}
+
+	.map_block_mobile {
+		display: block;
+	}
+
+	.map_main_mobile {
+		display: block;
+	}
+}
+
+@media(max-width: 1199px) {
+
+	.history-title,
+	.history-desc,
+	.history-numder {
+		width: auto;
+	}
+
+}
+@media(max-width: 992px) {
+
+	.header-line{
+		display: none;
+	}
+	.menu_mobile{
+		display: block;
+	}
+
+}
+@media(max-width: 636px) {
+	.phone-holder{
+		justify-content: center;
+	}
+	.line_menu_mobile{
+		justify-content: center;
+		display: block;
+	}
+	/* .bttn{
+		padding-top: 40px;
+	} */
+}
+
+@media(max-width: 900px) {
+	.cook-content {
+		padding-bottom: 180px;
+		justify-content: center;
+		display: grid;
+		gap: 75px;
+		grid-template-columns: repeat(1, 260px);
+		grid-template-rows: repeat(3, 290px);
+		grid-auto-rows: 380px;
+		grid-template-areas:
+			"eats1"
+			"eats2"
+			"eats3"
+		;
+
+	}
+}
+
+/* Конец Мобильнкая панель */
+/* Галерея блюд */
+@media (max-width: 1200px) {
+	.cards-grid {
+		grid-template-columns: repeat(2, 260px);
+		grid-template-rows: repeat(4, 290px);
+		grid-template-areas:
+			"widel1 widel1"
+			"product1 product2"
+			"wide2 wide2"
+			"product3 product4"
+		;
+
+
+	}
+}
+
+@media (max-width: 409px) {
+	.cards-grid {
+		width: 100%;
+
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"widel1"
+			"product1"
+			"product2"
+			"wide2"
+			"product3"
+			"product4";
+
+	}
+
+}
+
+/* Конец Галерея блюд */

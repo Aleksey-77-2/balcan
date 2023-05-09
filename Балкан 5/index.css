@@ -1,0 +1,682 @@
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+container {
+	max-width: 1200px;
+}
+
+html {
+	font-size: 16px;
+}
+
+header {
+	background-image: url(img/1626430623_10-almode_ru-p-temnaya-stena-13.jpg);
+	/* height: 80vh; */
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header_salad{
+	background-color: #000;
+}
+.nav-ittem_menu{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	transition: color 0.3s linear;
+}
+.nav-ittem_menu:hover {
+	color: #d81d1d;
+}
+
+.nav-button {
+	display: none;
+}
+
+.phone {
+	border-left: 1px solid #FFFFFF;
+	padding-left: 1.25rem;
+	height: 3rem;
+}
+
+.num {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+
+	transition: color 0.3s linear;
+}
+
+.num:hover {
+	color: #d81d1d;
+}
+
+.phone-text {
+	color: #fff;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.phone-holder {
+	display: flex;
+	align-items: center;
+}
+
+.button {
+	text-transform: uppercase;
+	background: #FF7400;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	padding: 1rem;
+
+	transition: background-color 0.3s linear;
+}
+
+.button:hover {
+	background-color: #ff7300c7;
+	color: #ffffffb0;
+}
+
+/* Основа шапки */
+.header_salad{
+	top: -100px;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	transition: all .2s ease;
+}
+.header_salad.fixed{
+	position: fixed;
+	transform: translateY(100px);
+}
+.header-down {
+	
+	padding-bottom: 5rem;
+
+}
+.header-logo_mobile {
+	padding-top: 2.5rem;
+}
+
+.menu_mobile {
+	display: none;
+	text-align: center;
+}
+
+.menu_nav_mobile {
+	padding-top: 2.5rem;
+	justify-content: center;
+	display: flex;
+}
+
+.line_menu_mobile {
+	justify-content: space-between;
+	padding-top: 2.5rem;
+	display: flex;
+}
+
+.header-titl {
+	color: #D67E35;
+	font-weight: 400;
+	font-size: 3rem;
+	font-family: 'Open Sans', sans-serif;
+
+	margin-top: 5rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.header-suptitle {
+	color: #fff;
+	font-size: 3rem;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* .header-suptitle:after {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 61px;
+	background: #fff;
+	top: 155px;
+	left: 120px;
+}
+
+.header-suptitle:before {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 61px;
+	background: #fff;
+	top: 155px;
+	left: 319px;
+} */
+
+.header-button {
+	background: #FF7400;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 1rem 1.7rem;
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+
+	transition: background-color 0.3s linear;
+}
+
+.header-button:hover {
+	background-color: #904506;
+	color: #ffffffb0;
+}
+
+.pop_up {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed; top: 50%; left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: rgb(0, 0, 0, .8);
+	z-index: 2;
+}
+
+.pop_up.active {
+	display: block;
+}
+
+.pop_up_container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.pop_up_body {
+	margin: auto;
+	width: 500px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 6.25rem 1rem 6.8rem 1rem;
+	position: relative;
+}
+
+.pop_up_body p {
+	text-align: center;
+	font-size: 1.75rem;
+	font-family: 'Tinos', serif;
+	font-weight: 600;
+	color: #22262d;
+	margin-bottom: 2.5rem;
+}
+
+.pop_up input {
+	display: block;
+	margin: 1.5rem auto 0 auto;
+	width: 300px;
+	padding: 1rem 1.25rem;
+	background-color: #e5e5e5;
+	border-radius: 10px;
+	border: none;
+	font-family: 'Tinos', serif;
+	font-weight: 500;
+	font-size: 1rem;
+	color: #89909f;
+}
+
+.pop_up_body input:focus {
+	outline: none;
+}
+
+.pop_up_body button {
+	cursor: pointer;
+	display: block;
+	width: 20.6rem;
+	margin: 3.75rem auto 0px auto;
+	padding: 1.25rem 0px;
+	font-weight: 500;
+	font-size: 1rem;
+	border: none;
+	color: #fff;
+	background: #FF7400;
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 10px;
+}
+
+.pop_up_close {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+
+/* Конец основы шапки */
+
+/* Наша история */
+.history-title {
+	font-family: 'Tinos', serif;
+	font-size: 3.3rem;
+	font-weight: 400;
+	width: 444px;
+	text-align: center;
+}
+.historys img{
+	cursor: pointer;
+}
+.history-title span {
+	color: #D67E34;
+}
+
+.history-desc {
+	color: #656363;
+	font-size: 1rem;
+	width: 444px;
+	text-align: center;
+}
+
+.history-numder {
+	display: flex;
+	width: 444px;
+	justify-content: center;
+	margin-top: 2.5rem;
+	margin-left: 1.8rem;
+}
+
+.number-item {
+	margin-right: 3.75rem;
+	text-align: center;
+	font-size: 2.5rem;
+	color: #D67E34;
+}
+
+.number-item span {
+	display: block;
+	font-size: 1rem;
+	color: #000;
+}
+
+.history-holder {
+	margin-top: 6.25rem;
+	margin-bottom: 6.25rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.history-pop_up {
+	z-index: 2;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, .8);
+}
+
+.history-pop_up img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 5px solid #fff;
+	border-radius: 8px;
+	width: 1200px;
+}
+
+.history-pop_up span {
+	position: fixed;
+	top: 10px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	font-size: 2rem;
+	font-weight: 900;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.history-image {
+	cursor: pointer;
+}
+
+/* Конец отдела "Наша история" */
+
+/* Меню ресторана */
+.menu_restoran {
+	background-image: url(img/menu.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.menu-title {
+	color: #ffff;
+	text-align: center;
+	padding-top: 6.25rem;
+	margin-bottom: 9.3rem;
+	font-family: 'Tinos', serif;
+	font-weight: 400;
+	font-size: 3.3rem;
+}
+
+.card {
+	text-align: center;
+}
+
+.card-text {
+	font-weight: 400;
+	font-size: 1.6rem;
+}
+
+.card-text a {
+	text-decoration: none;
+	color: #000;
+}
+
+.product {
+	width: 16.8rem;
+	/* height: 420px; */
+}
+
+.product-wrapper {
+	padding-bottom: 11.25rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 18.75rem);
+	gap: 40px 40px;
+	justify-content: center;
+
+}
+
+.card {
+	transition: 0.3s linear;
+}
+
+.card:hover {
+	background-color: orange;
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+/* Конец Меню ресторана */
+
+/* Галерея блюд */
+
+
+.galery-title {
+	font-family: 'Tinos', serif;
+	font-weight: 400;
+	font-size: 3.3rem;
+	text-align: center;
+	padding-top: 6.25rem;
+	margin-bottom: 3.7rem;
+}
+
+.galery-title span {
+	color: #D67E34;
+}
+
+.galery-content {
+	justify-content: center;
+}
+
+/* .galery-content{
+	display: flex;
+	justify-content: center;
+}
+.galery-left{
+	margin-right: 20px;
+}
+.galery-down,
+.galery-up{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+} */
+
+.cards-grid {
+	justify-content: center;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(4, 260px);
+	grid-template-rows: repeat(2, 290px);
+	grid-auto-rows: 380px;
+	grid-template-areas:
+
+		"widel1 widel1 product1 product2"
+		"product3 product4 wide2 wide2";
+
+}
+.cards-grid a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.cards-grid_products1 {
+	background-image: url(img/table-71380_1280\ 1.png);
+	background-size: cover;
+}
+
+.cards-grid_products2 {
+	background-image: url(img/coffee-3120750_1920\ 1.png);
+	background-size: cover;
+}
+
+.cards-grid_products3 {
+	background-image: url(img/goulash-6054124_1920\ 2.png);
+	background-size: cover;
+}
+
+.cards-grid_products4 {
+	background-image: url(img/coffee-3120750_1920\ 1.png);
+	background-size: cover;
+}
+
+.cards-grid_products5 {
+	background-image: url(img/goulash-6054124_1920\ 2.png);
+	background-size: cover;
+}
+
+.cards-grid_products6 {
+	background-image: url(img/table-71380_1280\ 1.png);
+	background-size: cover;
+}
+
+.cook-content {
+	padding-bottom: 180px;
+	justify-content: center;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(3, 260px);
+	grid-template-rows: repeat(1, 290px);
+	grid-auto-rows: 380px;
+	grid-template-areas:
+		"eats1 eats2 eats3"
+	;
+
+}
+
+.cooker-1 {
+	grid-area: eats1
+}
+
+.cooker-2 {
+	grid-area: eats2
+}
+
+.cooker-3 {
+	grid-area: eats3
+}
+
+.sales-1 {
+	grid-area: widel1;
+}
+
+.product-1 {
+	grid-area: product1;
+}
+
+.product-2 {
+	grid-area: product2;
+}
+
+.product-3 {
+	grid-area: product3;
+}
+
+.product-4 {
+	grid-area: product4;
+}
+
+.sale-2 {
+	grid-area: wide2;
+}
+
+/* Конец Галерея блюд */
+
+/* Наши Повара */
+.cooker-title {
+	font-family: 'Tinos', serif;
+	font-weight: 400;
+	font-size: 3.3rem;
+	text-align: center;
+	margin-bottom: 6.25rem;
+	padding-top: 6.25rem;
+}
+
+.cooker-title span {
+	color: #D67E34;
+}
+
+.product-wrappers {
+	padding-bottom: 11.25rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 16.8rem);
+	gap: 20px 50px;
+	justify-content: center;
+}
+
+/* Конец Наши повара */
+
+/* Адрес */
+.map {
+	background-image: url(img/bg_menu.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.map-title {
+	font-family: 'Tinos', serif;
+	color: #fff;
+	font-weight: 400;
+	font-size: 3.3rem;
+	text-align: center;
+	margin-bottom: 3.25rem;
+	padding-top: 6.25rem;
+}
+
+.map-title span {
+	color: #ff9640;
+}
+
+.map_block_mobile {
+	display: none;
+}
+
+.map_main_mobile {
+	display: none;
+}
+
+.info_block {
+	display: flex;
+	font-family: 'Tinos', serif;
+	color: #fff;
+	font-weight: 400;
+}
+
+.section-info {
+	text-align: center;
+}
+
+.info_block-text {
+	color: #fff;
+	font-size: 1.8rem;
+}
+
+.info_block-text span {
+	font-size: 1.5rem;
+}
+
+.metro {
+	width: 1.8rem;
+}
+
+.map_block {
+	padding-top: 1.25rem;
+}
+
+.map_main {
+	padding-bottom: 5rem;
+}
+
+.product_props {
+	display: flex;
+	align-items: center;
+}
+
+.product_rating {
+	display: inline-flex;
+	align-items: center;
+	font-weight: 600;
+	margin-right: 8px;
+}
+
+.product_testi {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+/* Конец Адреса */
+/* .bttn{
+	background-color: #FF7400;
+	padding: 14px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+} */

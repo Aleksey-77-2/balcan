@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="media.css">
+	<title>Балкан - Сербская кухня в Москве</title>
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+	<div class="pop_up" id="pop_up">
+		<div class="pop_up_container">
+			<div class="pop_up_body" id="pop_up_body">
+				<p>Забронировать столик</p>
+				<form action="">
+					<input type="text" placeholder="Фамилия">
+					<input type="text" placeholder="Имя">
+					<input type="phone" placeholder="Телефон">
+					<input type="Email" placeholder="Email">
+					<input type="text" placeholder="Количество людей">
+					<button>Забронировать</button>
+				</form>
+				<div class="pop_up_close" id="pop_up_close">&#10006</div>
+			</div>
+		</div>
+	</div>
+	<header>
+		<div class="header_salad">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container">
+				  <img class="navbar-brand" src="img/LOGO.png" alt="">
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					 <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse  justify-content-between " id="navbarSupportedContent">
+					 <ul class="navbar-nav mb-4 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link nav-ittem_menu" href="index.html">ГЛАВНАЯ</a>
+						 </li>
+						<li class="nav-item">
+							<a class="nav-link nav-ittem_menu" href="#map">АДРЕС</a>
+						 </li>
+						 <li class="nav-item">
+							<a class="nav-link nav-ittem_menu" href="#historys">О НАС</a>
+						 </li>
+						 <li class="nav-item">
+							<a class="nav-link nav-ittem_menu" href="#">ВАКАНСИИ</a>
+						 </li>
+					 </ul>
+					 <div class="phone-holder">
+						<div class="phone-img">
+							<img src="img/phone.png" alt="">
+						</div>
+						<div class="phone-number"> <a href="tel: +7 (495) 481-39-56" class="num">+7 (495) 481-39-56</a> </div>
+					</div>
+					<div class="bttn">
+						<a href="#"  id="open_pop_up" class="button">Заказ столика</a>
+					</div>
+				  </div>
+				</div>
+			 </nav>		 
+		</div>
+		<div class="container">
+			<!-- <div class="header-line">
+				<div class="header-logo">
+					<img src="img/LOGO.png" alt="">
+				</div>
+				<ul class="nav">
+					<li><a class="nav-ittem" href="index.html">ГЛАВНАЯ</a></li>
+					<li><a class="nav-ittem" href="#map">АДРЕС</a></li>
+					<li><a class="nav-ittem" href="#history_block">О НАС</a></li>
+					<li><a class="nav-ittem" href="">ВАКАНСИИ</a></li>
+				</ul>
+				<div class="phone">
+					<div class="phone-holder">
+						<div class="phone-img">
+							<img src="img/phone.png" alt="">
+						</div>
+						<div class="phone-number"> <a href="tel: +7 (495) 481-39-56" class="num">+7 (495) 481-39-56</a> </div>
+					</div>
+					<div class="phone-text">
+						Свяжитесь с нами для <br> бронирования
+					</div>
+				</div>
+				<div class="bttn">
+					<a href="#"  id="open_pop_up" class="button">Заказ столика</a>
+				</div>
+				<div class="nav-button">
+					<img src="./img/Group.svg" alt="">
+				</div>
+			</div> -->
+			<div class="header-down">
+				<div class="header-titl">
+					Добро пожаловать в
+					<div class="header-abstitle">
+						Наш ресторан
+					</div>
+					<div class="header-suptitle">
+						БАЛКАН
+					</div>
+					<div class="header-btn">
+						<a href="#menu-restoran_title" class="header-button">МЕНЮ</a>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="menu_mobile">
+				<div class="container">
+					<div class="header-logo_mobile">
+						<img src="img/LOGO.png" alt="">
+					</div>
+					<ul class="menu_nav_mobile">
+						<li><a class="nav-ittem" href="index.html">ГЛАВНАЯ</a></li>
+						<li><a class="nav-ittem" href="#map">АДРЕС</a></li>
+						<li><a class="nav-ittem" href="#history_block">О НАС</a></li>
+						<li><a class="nav-ittem" href="">ВАКАНСИИ</a></li>
+					</ul>
+					<div class="line_menu_mobile">
+						<div class="phone-holder">
+							<div class="phone-img">
+								<img src="img/phone.png" alt="">
+							</div>
+							<div class="phone-number"> <a href="tel: +7 (495) 481-39-56" class="num">+7 (495) 481-39-56</a> </div>
+						</div>
+						<div class="bttn">
+							<a href="#"  id="open_pop_up" class="button">Заказ столика</a>
+						</div>
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal_header modal-title" id="exampleModalLabel">Заявка на бронирование стола</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="mb-3">
+											<input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp"
+												placeholder="Фамилия">
+										</div>
+										<div class="mb-3">
+											<input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp"
+												placeholder="Имя">
+										</div>
+										<div class="mb-3">
+											<input type="email" class="form-control" id="exampleInput" aria-describedby="emailHelp"
+												placeholder="Email">
+										</div>
+										<div class="mb-3">
+											<input type="text" class="form-control" id="exampleInput" placeholder="Телефон">
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+									<button type="button" class="btn btn-primary">Отправить</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</header>
+	<main>
+		<div class="historys" id="historys">
+			<div class="container">
+				<div class="row align-items-center mb-5">
+					<div class="col-lg-5 col-sm-12">
+						<div class="history-info">
+							<h2 class="history-title">
+								Наша <span>история</span>
+							</h2>
+							<p class="history-desc">
+								Как и у любого другого самобытного места, у нас есть
+								своя, особая история. Идея ресторана пришла
+								основателям неожиданно. Во время прогулки по лесу
+								создатель нашего ресторана застрял в сотнях
+								километров от ближайшего населенного пункта. Вдали
+								от цивилизации и связи им пришлось навремя
+								обустровать себе нехитрый быт, добывать и готовить
+								себе еду.
+							</p>
+							<div class="history-numder">
+								<div class="number-item">
+									93 <span>Напитки</span>
+								</div>
+								<div class="number-item">
+									206 <span>Еда</span>
+								</div>
+								<div class="number-item">
+									71 <span>Закуски</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-sm-12 mb-sm-5 mt-sm-4 text-center">
+						<img class="img-fluid" src="img/orig.jpeg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="history-pop_up">
+				<span>&#10006</span>
+				<img src="img/orig.jpeg" alt="">
+			</div>
+		</div>
+	</main>
+	<main class="menu_restoran">
+		<div class="container">
+			<h2 id="menu-restoran_title" class="menu-title">
+				Наше меню
+			</h2>
+			<div class="product-wrapper">
+				<div id="salad" class="product">
+					<a class="navbar-brand" href="salad.html">
+						<div class="card" style="width: 18rem;">
+							<img src="img/grek.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text"><a href="salad.html">Салаты</a></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product">
+					<a class="navbar-brand" href="#">
+						<div class="card" style="width: 18rem;">
+							<img src="img/grek.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text"><a href="#">Салаты</a></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product">
+					<a class="navbar-brand" href="#">
+						<div class="card" style="width: 18rem;">
+							<img src="img/grek.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text"><a href="#">Салаты</a></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product">
+					<a class="navbar-brand" href="#">
+						<div class="card" style="width: 18rem;">
+							<img src="img/grek.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text"><a href="#">Салаты</a></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product">
+					<a class="navbar-brand" href="#">
+						<div class="card" style="width: 18rem;">
+							<img src="img/grek.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text"><a href="#">Салаты</a></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product">
+					<a class="navbar-brand" href="#">
+						<div class="card" style="width: 18rem;">
+							<img src="img/grek.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text"><a href="#">Салаты</a></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product">
+					<a class="navbar-brand" href="#">
+						<div class="card" style="width: 18rem;">
+							<img src="img/grek.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text"><a href="#">Салаты</a></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product">
+					<a class="navbar-brand" href="#">
+						<div class="card" style="width: 18rem;">
+							<img src="img/grek.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text"><a href="#">Салаты</a></p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<main class="galery">
+		<div class="container">
+			<div class="galery-title">
+				Галерея <span>Блюд</span>
+			</div>
+			<div class="cards-grid">
+				<div class="cards-grid_products1 cards-demo sales-1">
+					<a data-fslightbox="gallery" href="img/table-71380_1280 1.png">
+						
+					</a>
+				</div>
+				<div class="cards-grid_products2 cards-demo product-1">
+					<a data-fslightbox="gallery" href="img/coffee-3120750_1920 1.png">
+						
+					</a>
+				</div>
+				<div class="cards-grid_products3 cards-demo product-2">
+					<a data-fslightbox="gallery" href="img/goulash-6054124_1920 2.png">
+						
+					</a>
+				</div>
+
+				<div class="cards-grid_products4 cards-demo product-3">
+					<a data-fslightbox="gallery" href="img/coffee-3120750_1920 1.png">
+						
+					</a>
+				</div>
+				<div class="cards-grid_products5 cards-demo product-4">
+					<a data-fslightbox="gallery" href="img/goulash-6054124_1920 2.png">
+						
+					</a>
+				</div>
+				<div class="cards-grid_products6 cards-demo sale-2">
+					<a data-fslightbox="gallery" href="img/table-71380_1280 1.png">
+						
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<main class="cook">
+		<div class="container">
+			<div class="cooker-title">
+				Наши <span>Повара</span>
+			</div>
+			<div class="cook-content">
+				<div class="cards-demo cooker-1">
+					<a data-fslightbox="gallery1" href="img/cook-196932_1920 1.png">
+						<img src="img/cook-196932_1920 1.png" class="card-img-top" alt="...">
+					</a>
+				</div>
+				<div class="cards-demo cooker-2">
+					<a data-fslightbox="gallery1" href="img/pizza-366111_1280 1.png">
+						<img src="img/pizza-366111_1280 1.png" class="card-img-top" alt="...">
+					</a>
+				</div>
+				<div class="cards-demo cooker-3">
+					<a data-fslightbox="gallery1" href="img/image 4.png">
+						<img src="img/image 4.png" class="card-img-top" alt="...">
+					</a>
+				</div>
+				<!-- <div class="product-wrappers">
+					<div class="product_cook">
+						<div class="card_cook" style="width: 18rem;">
+							<img src="img/cook-196932_1920 1.png" class="card-img-top" alt="...">
+						</div>
+					</div>
+					<div class="product_cook">
+						<div class="card_cook" style="width: 18rem;">
+							<img src="img/pizza-366111_1280 1.png" class="card-img-top" alt="...">
+						</div>
+					</div>
+					<div class="product_cook">
+						<div class="card_cook" style="width: 18rem;">
+							<img src="img/image 4.png" class="card-img-top" alt="...">
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</main>
+	<main id="map" class="map">
+		<div class="container">
+			<div class="row">
+				<div class="map-title">
+					Наш <span>Адрес</span>
+				</div>
+				<div class="map_main">
+					<div class="section-info">
+						<div class="info_block">
+							<p class="info_block-text"> Наш номер телефона: <a href="tel: +7 (495) 481-39-56" class="num">
+									<span>+7 (495) 481-39-56</span></a></p>
+						</div>
+						<div class="info_block">
+							<p class="info_block-text"> График работы: <span>Пн-Вс с 12:00 до 23:00</span> </p>
+						</div>
+						<div class="product_props">
+							<span class="product_rating">
+								<i class="fa-solid fa-star"><img class="metro"
+										src="data:image/png;base64,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"></i>
+							</span>
+							<span class="product_testi">Молодёжная</span>
+						</div>
+						<div class="info_block">
+							<p class="info_block-text"> Наш адрес: <span>Беловежская ул., 1, корп. 2</span> </p>
+						</div>
+					</div>
+					<div class="map_block">
+						<script type="text/javascript" charset="utf-8" async
+							src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab0bf52c2eefaa6761a756ffc00b9e90804651aa72628c8bc459741328a4c6231&amp;width=100%25&amp;height=609&amp;lang=ru_RU&amp;scroll=false"></script>
+					</div>
+				</div>
+				<div class="map_main_mobile">
+					<div class="section-info">
+						<div class="info_block justify-content-center">
+							<p class="info_block-text"> Наш номер телефона: <a href="tel: +7 (495) 481-39-56" class="num">
+									<span>+7 (495) 481-39-56</span></a></p>
+						</div>
+						<div class="info_block justify-content-center">
+							<p class="info_block-text"> График работы: <span>Пн-Вс с 12:00 до 23:00</span> </p>
+						</div>
+						<div class="product_props justify-content-center">
+							<span class="product_rating">
+								<i class="fa-solid fa-star"><img class="metro"
+										src="data:image/png;base64,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"></i>
+							</span>
+							<span class="product_testi">Молодёжная</span>
+						</div>
+						<div class="info_block justify-content-center">
+							<p class="info_block-text"> Наш адрес: <span>Беловежская ул., 1, корп. 2</span> </p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</main>
+	<div class="map_block_mobile">
+		<script type="text/javascript" charset="utf-8" async
+			src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab0bf52c2eefaa6761a756ffc00b9e90804651aa72628c8bc459741328a4c6231&amp;width=100%25&amp;height=609&amp;lang=ru_RU&amp;scroll=false"></script>
+	</div>
+	<script src="main.js"></script>
+
+	<script>
+		document.querySelectorAll('.historys img').forEach(img =>{
+			img.onclick = () =>{
+				 document.querySelector('.history-pop_up').style.display = 'block';
+				 document.querySelector('.history-pop_up img').src = img.getAttribute('src');
+				 scrollController.disabledScroll();
+			}
+		});
+		document.querySelector('.history-pop_up span').onclick = () =>{
+			document.querySelector('.history-pop_up').style.display = 'none';
+			scrollController.enabledScroll();
+		}
+	</script>
+
+	<script src="fslightbox.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.features-slider').slick({
+				infinite: true,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				responsive: [
+					{
+						breakpoint: 1300,
+						settings: {
+							slidesToShow: 2,
+							prevArrow: '<button class="prev arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>',
+							nextArrow: '<button class="next arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>',
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 767,
+						settings: {
+							slidesToShow: 1,
+							prevArrow: '<button class="prev arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>',
+							nextArrow: '<button class="next arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>',
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.features-slider2').slick({
+				infinite: true,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				responsive: [
+					{
+						breakpoint: 1300,
+						settings: {
+							slidesToShow: 2,
+							prevArrow: '<button class="prev arrows"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>',
+							nextArrow: '<button class="next arrows"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>',
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 767,
+						settings: {
+							slidesToShow: 1,
+							prevArrow: '<button class="prev arrows"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>',
+							nextArrow: '<button class="next arrows"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>',
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+		});
+	</script>
+</body>
+
+</html>
